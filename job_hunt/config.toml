@@ -7,14 +7,13 @@ port = 8501
 name = "Resume Builder"
 logo = "images/logo.png"
 favicon = "images/favicon.ico"
-primaryColor = "#F89613"
+primaryColor = "#003ca8"
 
-[data.postgres]
-host = "localhost"            # PostgreSQL host
-port = 5432                   # PostgreSQL port
-dbname = "mydb"              # Database name
-user = "user"                # Username
-# password is stored in secrets.toml
+[data.csv]
+type = "csv"
+path = "resume.csv"
+delimiter = ","
+header = true
 
 [logging]
 level = "INFO"  # Options: DEBUG, INFO, WARNING, ERROR, CRITICAL
